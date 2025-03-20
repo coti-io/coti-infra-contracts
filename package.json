@@ -1,0 +1,12 @@
+{
+  "name": "coti-infra-contracts",
+  "version": "1.0.0",
+  "author": "COTI Development",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "@coti-io/coti-contracts": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.19",
+    "hardhat-deploy": "^0.12.4"
+  }
+}
