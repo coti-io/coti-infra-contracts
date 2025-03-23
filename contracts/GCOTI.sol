@@ -9,12 +9,12 @@ import {ERC20Pausable} from "@openzeppelin/contracts/token/ERC20/extensions/ERC2
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {ERC20Permit} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 
-contract GCOTI is ERC20, ERC20Capped, ERC20Burnable, ERC20Pausable, Ownable, ERC20Permit {
+contract gCOTI is ERC20, ERC20Capped, ERC20Burnable, ERC20Pausable, Ownable, ERC20Permit {
     constructor(address initialOwner, address recipient, uint256 totalSupply)
         ERC20("COTI Treasury Governance Token", "gCOTI")
         ERC20Capped(totalSupply)
         Ownable()
-        ERC20Permit("GCOTI")
+        ERC20Permit("gCOTI")
     {
         _mint(recipient, totalSupply);
         _transferOwnership(initialOwner);
