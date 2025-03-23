@@ -12,7 +12,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     const recipient = "";
     const totalSupply = 0n
 
-    const res = await deploy('GCOTI', {
+    const res = await deploy('gCOTI', {
         from: deployer,
         args: [initialOwner, recipient, totalSupply],
         deterministicDeployment: true
